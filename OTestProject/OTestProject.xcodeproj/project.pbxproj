@@ -16,6 +16,11 @@
 		791485A32146A99B00CC691D /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485A22146A99B00CC691D /* HTTPStatusCode.swift */; };
 		791485A62146AA5600CC691D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485A52146AA5600CC691D /* Constants.swift */; };
 		791485A92146ABD000CC691D /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485A82146ABD000CC691D /* ServerManager.swift */; };
+		791485AB2146AD1400CC691D /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485AA2146AD1400CC691D /* Album.swift */; };
+		791485AD2146AD2800CC691D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485AC2146AD2800CC691D /* Photo.swift */; };
+		791485AF2146B13F00CC691D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485AE2146B13F00CC691D /* DataManager.swift */; };
+		791485B12146B1F200CC691D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485B02146B1F200CC691D /* Post.swift */; };
+		791485B32146B24100CC691D /* PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485B22146B24100CC691D /* PostComment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		791485A22146A99B00CC691D /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		791485A52146AA5600CC691D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		791485A82146ABD000CC691D /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		791485AA2146AD1400CC691D /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		791485AC2146AD2800CC691D /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		791485AE2146B13F00CC691D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		791485B02146B1F200CC691D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		791485B22146B24100CC691D /* PostComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComment.swift; sourceTree = "<group>"; };
 		844DDF6F18C124B747B043FD /* Pods-OTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F53711C87B24AEDE24A2442F /* Pods-OTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				791485A52146AA5600CC691D /* Constants.swift */,
+				791485AE2146B13F00CC691D /* DataManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -108,6 +119,10 @@
 		791485A72146AA8200CC691D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				791485AA2146AD1400CC691D /* Album.swift */,
+				791485AC2146AD2800CC691D /* Photo.swift */,
+				791485B02146B1F200CC691D /* Post.swift */,
+				791485B22146B24100CC691D /* PostComment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,11 +258,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791485AD2146AD2800CC691D /* Photo.swift in Sources */,
+				791485AF2146B13F00CC691D /* DataManager.swift in Sources */,
 				791485A92146ABD000CC691D /* ServerManager.swift in Sources */,
 				791485A32146A99B00CC691D /* HTTPStatusCode.swift in Sources */,
 				7914858C21469E7000CC691D /* AppDelegate.swift in Sources */,
 				791485A12146A56500CC691D /* HTTPRequestManager.swift in Sources */,
+				791485B12146B1F200CC691D /* Post.swift in Sources */,
+				791485B32146B24100CC691D /* PostComment.swift in Sources */,
 				791485A62146AA5600CC691D /* Constants.swift in Sources */,
+				791485AB2146AD1400CC691D /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
