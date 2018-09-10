@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		3AB81D36EB6192F8AB3CF8CE /* Pods_OTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1F6EA1EC220F6AEA804AC0 /* Pods_OTestProject.framework */; };
 		7914858C21469E7000CC691D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914858B21469E7000CC691D /* AppDelegate.swift */; };
-		7914858E21469E7000CC691D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914858D21469E7000CC691D /* ViewController.swift */; };
 		7914859121469E7000CC691D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7914858F21469E7000CC691D /* Main.storyboard */; };
 		7914859321469E7100CC691D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7914859221469E7100CC691D /* Assets.xcassets */; };
 		7914859621469E7100CC691D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7914859421469E7100CC691D /* LaunchScreen.storyboard */; };
+		791485A12146A56500CC691D /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485A02146A56500CC691D /* HTTPRequestManager.swift */; };
+		791485A32146A99B00CC691D /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485A22146A99B00CC691D /* HTTPStatusCode.swift */; };
+		791485A62146AA5600CC691D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485A52146AA5600CC691D /* Constants.swift */; };
+		791485A92146ABD000CC691D /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485A82146ABD000CC691D /* ServerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F1F6EA1EC220F6AEA804AC0 /* Pods_OTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7914858821469E7000CC691D /* OTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7914858B21469E7000CC691D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7914858D21469E7000CC691D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7914859021469E7000CC691D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7914859221469E7100CC691D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7914859521469E7100CC691D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7914859721469E7100CC691D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		791485A02146A56500CC691D /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		791485A22146A99B00CC691D /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		791485A52146AA5600CC691D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		791485A82146ABD000CC691D /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		844DDF6F18C124B747B043FD /* Pods-OTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F53711C87B24AEDE24A2442F /* Pods-OTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,14 +67,49 @@
 		7914858A21469E7000CC691D /* OTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				791485A72146AA8200CC691D /* Models */,
+				791485A42146A9C400CC691D /* Helpers */,
+				7914859F2146A50600CC691D /* Network */,
+				7914859E2146A4DF00CC691D /* ViewControllers */,
 				7914858B21469E7000CC691D /* AppDelegate.swift */,
-				7914858D21469E7000CC691D /* ViewController.swift */,
 				7914858F21469E7000CC691D /* Main.storyboard */,
 				7914859221469E7100CC691D /* Assets.xcassets */,
 				7914859421469E7100CC691D /* LaunchScreen.storyboard */,
 				7914859721469E7100CC691D /* Info.plist */,
 			);
 			path = OTestProject;
+			sourceTree = "<group>";
+		};
+		7914859E2146A4DF00CC691D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7914859F2146A50600CC691D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				791485A02146A56500CC691D /* HTTPRequestManager.swift */,
+				791485A22146A99B00CC691D /* HTTPStatusCode.swift */,
+				791485A82146ABD000CC691D /* ServerManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		791485A42146A9C400CC691D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				791485A52146AA5600CC691D /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		791485A72146AA8200CC691D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7E0220689E6C1598502CC11D /* Frameworks */ = {
@@ -99,6 +140,7 @@
 				7914858421469E7000CC691D /* Sources */,
 				7914858521469E7000CC691D /* Frameworks */,
 				7914858621469E7000CC691D /* Resources */,
+				2F013EC7BAA4AB169D819154 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +198,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2F013EC7BAA4AB169D819154 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		59FF0FD1F06F2891C29ED624 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,8 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7914858E21469E7000CC691D /* ViewController.swift in Sources */,
+				791485A92146ABD000CC691D /* ServerManager.swift in Sources */,
+				791485A32146A99B00CC691D /* HTTPStatusCode.swift in Sources */,
 				7914858C21469E7000CC691D /* AppDelegate.swift in Sources */,
+				791485A12146A56500CC691D /* HTTPRequestManager.swift in Sources */,
+				791485A62146AA5600CC691D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
