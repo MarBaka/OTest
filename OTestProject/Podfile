@@ -6,5 +6,6 @@ target 'OTestProject' do
   use_frameworks!
 
   # Pods for OTestProject
-
+pod 'Alamofire'
+pod 'Kingfisher'
 end
