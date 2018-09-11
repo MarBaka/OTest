@@ -12,10 +12,8 @@ struct Constants {
     
     struct Network{
         struct EndPoint {
-            static let categories = "categories/"
-            static let subcategories = "subcategories/"
-            static let cources = "courses/"
-            static let news = "news/"
+            static let albums = "albums/"
+            static let posts = "posts/" 
         }
         
         struct ErrorMessage {

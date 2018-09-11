@@ -12,6 +12,6 @@ class Album : Decodable {
     
     var userId : Int?
     var id : Int?
-    var title : Int?
+    var title : String?
     
 }

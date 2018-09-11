@@ -21,6 +21,7 @@
 		791485AF2146B13F00CC691D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485AE2146B13F00CC691D /* DataManager.swift */; };
 		791485B12146B1F200CC691D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485B02146B1F200CC691D /* Post.swift */; };
 		791485B32146B24100CC691D /* PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485B22146B24100CC691D /* PostComment.swift */; };
+		79CB7EF021481228004379D4 /* testVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB7EEF21481228004379D4 /* testVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		791485AE2146B13F00CC691D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		791485B02146B1F200CC691D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		791485B22146B24100CC691D /* PostComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComment.swift; sourceTree = "<group>"; };
+		79CB7EEF21481228004379D4 /* testVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testVC.swift; sourceTree = "<group>"; };
 		844DDF6F18C124B747B043FD /* Pods-OTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F53711C87B24AEDE24A2442F /* Pods-OTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,10 +79,10 @@
 		7914858A21469E7000CC691D /* OTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				7914859E2146A4DF00CC691D /* ViewControllers */,
 				791485A72146AA8200CC691D /* Models */,
 				791485A42146A9C400CC691D /* Helpers */,
 				7914859F2146A50600CC691D /* Network */,
-				7914859E2146A4DF00CC691D /* ViewControllers */,
 				7914858B21469E7000CC691D /* AppDelegate.swift */,
 				7914858F21469E7000CC691D /* Main.storyboard */,
 				7914859221469E7100CC691D /* Assets.xcassets */,
@@ -93,6 +95,7 @@
 		7914859E2146A4DF00CC691D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				79CB7EEF21481228004379D4 /* testVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				791485A12146A56500CC691D /* HTTPRequestManager.swift in Sources */,
 				791485B12146B1F200CC691D /* Post.swift in Sources */,
 				791485B32146B24100CC691D /* PostComment.swift in Sources */,
+				79CB7EF021481228004379D4 /* testVC.swift in Sources */,
 				791485A62146AA5600CC691D /* Constants.swift in Sources */,
 				791485AB2146AD1400CC691D /* Album.swift in Sources */,
 			);

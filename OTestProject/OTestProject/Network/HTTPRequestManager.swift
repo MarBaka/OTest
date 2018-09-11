@@ -25,7 +25,7 @@ class HTTPRequestManager {
             return
         }
         
-        let apiUrl = "http://46.101.146.101:8081/" + endpoint
+        let apiUrl = "https://jsonplaceholder.typicode.com/" + endpoint
         
         
         let header: HTTPHeaders = [:]
