@@ -21,7 +21,8 @@
 		791485AF2146B13F00CC691D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485AE2146B13F00CC691D /* DataManager.swift */; };
 		791485B12146B1F200CC691D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485B02146B1F200CC691D /* Post.swift */; };
 		791485B32146B24100CC691D /* PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485B22146B24100CC691D /* PostComment.swift */; };
-		79CB7EF021481228004379D4 /* testVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB7EEF21481228004379D4 /* testVC.swift */; };
+		79698089214E7E1D00F104E8 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79698088214E7E1D00F104E8 /* AlbumCollectionViewCell.swift */; };
+		79CB7EF021481228004379D4 /* AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB7EEF21481228004379D4 /* AlbumVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +42,8 @@
 		791485AE2146B13F00CC691D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		791485B02146B1F200CC691D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		791485B22146B24100CC691D /* PostComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComment.swift; sourceTree = "<group>"; };
-		79CB7EEF21481228004379D4 /* testVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testVC.swift; sourceTree = "<group>"; };
+		79698088214E7E1D00F104E8 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		79CB7EEF21481228004379D4 /* AlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumVC.swift; sourceTree = "<group>"; };
 		844DDF6F18C124B747B043FD /* Pods-OTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F53711C87B24AEDE24A2442F /* Pods-OTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +97,8 @@
 		7914859E2146A4DF00CC691D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				79CB7EEF21481228004379D4 /* testVC.swift */,
+				79EB54CF215E81260059B559 /* PhotosVC */,
+				79698087214E7DF500F104E8 /* Album VC */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -128,6 +131,22 @@
 				791485B22146B24100CC691D /* PostComment.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		79698087214E7DF500F104E8 /* Album VC */ = {
+			isa = PBXGroup;
+			children = (
+				79CB7EEF21481228004379D4 /* AlbumVC.swift */,
+				79698088214E7E1D00F104E8 /* AlbumCollectionViewCell.swift */,
+			);
+			path = "Album VC";
+			sourceTree = "<group>";
+		};
+		79EB54CF215E81260059B559 /* PhotosVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotosVC;
 			sourceTree = "<group>";
 		};
 		7E0220689E6C1598502CC11D /* Frameworks */ = {
@@ -261,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79698089214E7E1D00F104E8 /* AlbumCollectionViewCell.swift in Sources */,
 				791485AD2146AD2800CC691D /* Photo.swift in Sources */,
 				791485AF2146B13F00CC691D /* DataManager.swift in Sources */,
 				791485A92146ABD000CC691D /* ServerManager.swift in Sources */,
@@ -269,7 +289,7 @@
 				791485A12146A56500CC691D /* HTTPRequestManager.swift in Sources */,
 				791485B12146B1F200CC691D /* Post.swift in Sources */,
 				791485B32146B24100CC691D /* PostComment.swift in Sources */,
-				79CB7EF021481228004379D4 /* testVC.swift in Sources */,
+				79CB7EF021481228004379D4 /* AlbumVC.swift in Sources */,
 				791485A62146AA5600CC691D /* Constants.swift in Sources */,
 				791485AB2146AD1400CC691D /* Album.swift in Sources */,
 			);

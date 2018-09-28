@@ -13,7 +13,7 @@ struct Constants {
     struct Network{
         struct EndPoint {
             static let albums = "albums/"
-            static let posts = "posts/" 
+            static let photos = "photos/" 
         }
         
         struct ErrorMessage {
