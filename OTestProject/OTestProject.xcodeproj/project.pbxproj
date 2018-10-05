@@ -23,6 +23,8 @@
 		791485B32146B24100CC691D /* PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791485B22146B24100CC691D /* PostComment.swift */; };
 		79698089214E7E1D00F104E8 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79698088214E7E1D00F104E8 /* AlbumCollectionViewCell.swift */; };
 		79CB7EF021481228004379D4 /* AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB7EEF21481228004379D4 /* AlbumVC.swift */; };
+		79EB54D1215E84BE0059B559 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB54D0215E84BE0059B559 /* PhotoCollectionViewCell.swift */; };
+		79EB54D3215E84D00059B559 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB54D2215E84D00059B559 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		791485B22146B24100CC691D /* PostComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComment.swift; sourceTree = "<group>"; };
 		79698088214E7E1D00F104E8 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		79CB7EEF21481228004379D4 /* AlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumVC.swift; sourceTree = "<group>"; };
+		79EB54D0215E84BE0059B559 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		79EB54D2215E84D00059B559 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		844DDF6F18C124B747B043FD /* Pods-OTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F53711C87B24AEDE24A2442F /* Pods-OTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-OTestProject/Pods-OTestProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +149,8 @@
 		79EB54CF215E81260059B559 /* PhotosVC */ = {
 			isa = PBXGroup;
 			children = (
+				79EB54D2215E84D00059B559 /* PhotoViewController.swift */,
+				79EB54D0215E84BE0059B559 /* PhotoCollectionViewCell.swift */,
 			);
 			path = PhotosVC;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79698089214E7E1D00F104E8 /* AlbumCollectionViewCell.swift in Sources */,
+				79EB54D1215E84BE0059B559 /* PhotoCollectionViewCell.swift in Sources */,
 				791485AD2146AD2800CC691D /* Photo.swift in Sources */,
 				791485AF2146B13F00CC691D /* DataManager.swift in Sources */,
 				791485A92146ABD000CC691D /* ServerManager.swift in Sources */,
@@ -290,6 +297,7 @@
 				791485B12146B1F200CC691D /* Post.swift in Sources */,
 				791485B32146B24100CC691D /* PostComment.swift in Sources */,
 				79CB7EF021481228004379D4 /* AlbumVC.swift in Sources */,
+				79EB54D3215E84D00059B559 /* PhotoViewController.swift in Sources */,
 				791485A62146AA5600CC691D /* Constants.swift in Sources */,
 				791485AB2146AD1400CC691D /* Album.swift in Sources */,
 			);

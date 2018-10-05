@@ -89,6 +89,12 @@ class AlbumVC : UIViewController, UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return randomNumberOfElementsOnScreen
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PhotoVC") as! PhotoViewController
+        vc.photoArray = self.photosArray[indexPath.item]
+        self.navigationController?.show(vc, sender: self)
+    }
 
     func containsInAlbumArray (array : [Album], object : Album) -> Bool {
         
