@@ -13,12 +13,14 @@ class PhotoViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var colView : UICollectionView!
     
     var photoArray: [Photo] = []
+    let cellInset = 15.0 as CGFloat
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         colView.dataSource = self
         colView.delegate = self
+        colView.contentInset = UIEdgeInsets(top: cellInset, left: cellInset, bottom: cellInset, right: cellInset)
         
         colView.reloadData()
     }

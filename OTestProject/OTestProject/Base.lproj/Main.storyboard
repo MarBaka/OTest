@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="3690.4000000000001" y="104.7976011994003"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="qc2-NG-roi">
             <objects>
-                <viewController storyboardIdentifier="PhotoVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SVy-kA-pyt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SVy-kA-pyt" customClass="PhotoViewController" customModule="OTestProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KuA-4C-VE2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,6 +152,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X7O-pQ-Kvl"/>
                     </view>
+                    <connections>
+                        <outlet property="colView" destination="KlH-a2-KJ0" id="gtf-Ei-sxE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xzT-hC-yNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
